@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #212121;
+    --shadow-color: rgb(138, 138, 138);
+    --alternating-color: rgb(235, 235, 235);
+}
+@font-face { 
+    /* importing fonts */
+    font-family: AllianceLight;
+    src: url(../AllianceNo1-Light.ttf);
+}
+@font-face {
+    /* importing fonts */
+    font-family: AllianceExtraBold;
+    src: url(../AllianceNo1-ExtraBold.ttf);
+}
+@font-face {
+    font-family: AllianceRegular;
+    src: url(../AllianceNo1-Regular.ttf);
+}
+.dark-theme {
+    --primary-color: #212121;
+    --secondary-color: #ffffff;
+    --shadow-color: rgb(95, 95, 95);
+    --alternating-color: rgb(20, 20, 20);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: AllianceLight;
+}
+body {
+    background-color: var(--primary-color);
+    z-index: -10;
+}
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0 0.2px 6px grey;
+    z-index: 10000;
+    height: 5em;
+}
+ul #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 25px;
+}
+#navbar li {
+    display: inline-block;
+    padding: 40px 0 20px 0;
+}
+#navbar li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: AllianceLight;
+    padding: 30px;
+}
+#navbar li a:hover {
+    font-family: AllianceExtraBold;
+}
+#title {
+    position: relative;
+    margin-left: 40vw;
+    font-family: AllianceExtraBold;
+    color: var(--secondary-color);
+    font-size: larger;
+}
+/* Hero Description */
+
+#moon {
+    width: 2.5em;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+    margin-top: 5em;
+  }
+  
+  .wrapper .sidebar{
+    width: 260px;
+    height: 80%;
+    background: var(--primary-color);
+    position: fixed;
+    overflow: scroll;
+    margin-left: 1em;
+    margin-top: 2em;
+    border-radius: 5px;
+    overflow-x: hidden;
+  }
+
+  .wrapper .sidebar ul {
+      margin-top: 15px;
+  }
+  
+  .wrapper .sidebar ul li a{
+    width: 100%;
+    color: var(--secondary-color);
+    display: block;
+    padding: 15px 0 15px 35px ;
+  }
+
+  .wrapper .sidebar ul li:hover a{
+    font-family: AllianceExtraBold;
+  }
+   
+  .wrapper .main_content{
+    width: 81%;
+    margin-left: 276px;
+    padding: 10px 0 0 10px;
+  }
+  
+  .wrapper .main_content .header{
+    padding: 20px 20px 5px 20px;
+    color: var(--secondary-color);
+    font-family: AllianceExtraBold;
+    font-size: 1.5em;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  
+  .wrapper .main_content .info{
+    margin: 20px;
+    color: var(--secondary-color);
+    line-height: 25px;
+  }
+  
+  .wrapper .main_content .info div{
+    margin-bottom: 20px;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 25% auto;
+  }
+td {
+    font-family: AllianceRegular;
+    font-size: 10pt;
+    text-align: left;
+    padding: 2px 10px;
+    vertical-align: top;
+}
+  th {
+    text-align: left;
+    padding: 10px;
+  }
+ td:first-child, th:first-child {
+    padding-left: 20px;
+  }
+  
+ td:last-child, th:last-child {
+    padding-right: 20px;
+  }
+  tbody tr:nth-child(odd) {
+      background-color: var(--alternating-color);
+  }
+  
+ th {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
