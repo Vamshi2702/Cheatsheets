@@ -179,7 +179,6 @@ h1.contactheading {
     font-family: AllianceExtraBold;
     font-size: 12pt;
     vertical-align: middle;
-    box-shadow: 5px 5px 10px var(--shadow-color);
 }
 .button:hover {
     background-color: var(--secondary-color);
