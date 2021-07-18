@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/logo.png">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+    <nav>
+        <ul> <!--Navigation Links-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html"><span id="about">Contact</span></a></li>
+            <li><img src="./icons/toggle-light.png" alt="moon" id="moon"></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- Hero Page Content -->
+    <div id="Home">
+            <h1 class="contactheading">Contact me</h1>
+            <p id="aboutpara">For any suggestions or queries regarding the cheat sheets or for any improvements, feel free to contact me</p>
+    </div>
+    <div class="icons">
+        <a href="mailto: vamshikomati2702@gmail.com" target="_blank"><img src="./icons/gmail.png" alt="Gmail" id="Gmail"></a>
+        <a href="https://www.facebook.com/vamshi.komati.10/" target="_blank"><img src="./icons/facebook.png" alt="Facebook" id="Facebook"></a>
+        <a href="https://www.linkedin.com/in/vk-komati/" target="_blank"><img src="./icons/linkedin.png" alt="Linkedin" id="Linkedin"></a>
+    </div>
+    <footer>
+        <p class="footer">prepared by <span id="author">Vamshi Krishna Komati</span></p>
+        <p class="footer">with refrence to <a href="https://www.w3schools.com/" target="_blank" style="text-decoration: none;">w3schools</a></p>
+    </footer>
+    <script>
+        var moon = document.getElementById("moon");
+        var gmail = document.getElementById("Gmail");
+        var facebook = document.getElementById("Facebook");
+        var linkedin = document.getElementById("Linkedin");
+
+        moon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                moon.src = "./icons/camera.png";
+                gmail.src = "./icons/gmail-fill.png";
+                facebook.src = "./icons/facebook-fill.png";
+                linkedin.src = "./icons/linkedin-fill.png";
+
+            }else{
+                moon.src = "./icons/toggle-light.png";
+                gmail.src = "./icons/gmail.png";
+                facebook.src = "./icons/facebook.png";
+                linkedin.src = "./icons/linkedin.png";
+            }
+        }
+    </script>
+</html>
